@@ -93,8 +93,6 @@ CakePHP has come callback methods in Model and Controller classes. In this case,
 
 ### 2. Use CakePHP's Event System
 
-**The Observer Pattern**
-
 Updating points and badges is a kind of `events` happens in the app. So we can create events and event listeners to integrate into our application. Example events are
 - post new topic
 - invite friends
@@ -107,4 +105,15 @@ I think this idea is good because
 - When we want to change what the action `post new topic` does (like change points, or add more badges), it will be easy because we can go to modify the action's event listener function. Not change the whole logic.
 - Application itself doesn't have to do much. Just trigger an event. The rest is event listener's work.
 
-CakePHP has an interface [CakeEventListener](http://book.cakephp.org/2.0/en/core-libraries/events.html) 
+This concept is actually **[The Observer Pattern](http://en.wikipedia.org/wiki/Observer_pattern)** *(or Pub-Sub)*
+
+CakePHP has an interface [CakeEventListener](http://book.cakephp.org/2.0/en/core-libraries/events.html) which we can use to implement Observer pattern and gamification system for our app.
+
+#### Issues
+
+(I try to avoid using the word `problem`)
+
+- We (Ting and I) don't know much about Design Patterns (and Observer patterns). Though we did some research and Observer patterns seems not that hard to learn.
+- We have never use CakeEventListener class in CakePHP. We have no idea how to use it yet. Luckily, this topic has [detailed docs](http://book.cakephp.org/2.0/en/core-libraries/events.html) on book.cakephp.org.
+
+Our plan is taking more research on this approach. Maybe we need to create some quick prototype to learn about using this Interface to create evented-system using CakePHP.
