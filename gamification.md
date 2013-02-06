@@ -116,4 +116,4 @@ CakePHP has an interface [CakeEventListener](http://book.cakephp.org/2.0/en/core
 - We (Ting and I) don't know much about Design Patterns (and Observer patterns). Though we did some research and Observer patterns seems not that hard to learn.
 - We have never use CakeEventListener class in CakePHP. We have no idea how to use it yet. Luckily, this topic has [detailed docs](http://book.cakephp.org/2.0/en/core-libraries/events.html) on book.cakephp.org.
 
-Our plan is taking more research on this approach. Maybe we need to create some quick prototype to learn about using this Interface to create evented-system using CakePHP.
+Our plan is taking more research on this approach. Maybe we need to create some quick prototype to learn about using this Interface to create evented-system using CakePHP. If we can use this design pattern efficiently, I think it will be good for other apps too.
